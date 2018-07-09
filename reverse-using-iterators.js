@@ -5,7 +5,7 @@ const reverse = (s) => {
   // let str = prompt("Please enter the string", "default");
   const strsplit = s.split('');
   const strlen = s.length;
-  for (i = strlen - 1; i >= 0; i = i - 1) {
+  for (i = strlen - 1; i >= 0; i -= 1) {
     revStr += strsplit[i];
   }
   return (revStr);
