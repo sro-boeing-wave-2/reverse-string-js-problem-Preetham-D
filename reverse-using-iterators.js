@@ -1,14 +1,14 @@
-// The intent of this file is to reverse the string using iterators (for, foreach)
-const reverse = (reverse) => {
-    var i;
-    var rev_str = "";
-    // var str = prompt("Please enter the string", "default");
-    var strsplit = reverse.split("");
-    var strlen = reverse.length;
-    for (i = strlen-1; i >= 0; i--) {
-        rev_str = rev_str + strsplit[i];
-    }
-    return(rev_str)
+// The intent of this file is to s the string using iterators (for, foreach)
+const reverse = (s) => {
+  let i;
+  let revStr = '';
+  // let str = prompt("Please enter the string", "default");
+  const strsplit = s.split('');
+  const strlen = s.length;
+  for (i = strlen - 1; i >= 0; i = i - 1) {
+    revStr += strsplit[i];
+  }
+  return (revStr);
 };
 
 module.exports = reverse;
